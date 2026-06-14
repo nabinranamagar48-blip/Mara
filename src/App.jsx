@@ -316,7 +316,7 @@ export default function MARAApp() {
 
   return (
     <div style={{minHeight:"100vh",background:t.bg,fontFamily:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",paddingBottom:"90px",color:t.textPrimary,transition:"background 0.2s,color 0.2s"}}>
-      <div style={{position:"sticky",top:0,background:t.bg,zIndex:20,borderBottom:`1px solid ${t.border}`,transition:"background 0.2s,border-color 0.2s"}}>
+      <div style={{position:"sticky",top:0,background:t.bg,zIndex:20,borderBottom:`1px solid ${t.border}`}}>
         <div style={{padding:"16px 20px 0"}}>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"14px"}}>
             <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
@@ -414,4 +414,3 @@ export default function MARAApp() {
     </div>
   );
 }
-
