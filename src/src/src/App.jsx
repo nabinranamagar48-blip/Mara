@@ -32,48 +32,48 @@ const THEMES = {
 };
 
 const DAILY_TIPS = [
-  { tag:"Espresso Technique", title:"Nail Your Extraction Time", body:"A well-pulled espresso should take 25–30 seconds from first drop to finish. If it runs faster, grind finer or tamp harder. If it stalls past 35 seconds, coarsen the grind slightly — channeling is usually the culprit." },
-  { tag:"Milk Science", title:"Steam at the Right Angle", body:"Position your steam wand just off-centre and tilt the pitcher at 15–20°. This creates a consistent whirlpool that breaks down large bubbles. Stop steaming when the pitcher reaches 60–65°C — any hotter and the milk proteins denature and taste flat." },
-  { tag:"Coffee Origins", title:"Ethiopia: Birthplace of Coffee", body:"Coffee was first discovered in the Kaffa region of Ethiopia around 850 AD. Ethiopian naturals from Yirgacheffe carry intense blueberry and jasmine notes due to the high altitude (1,700–2,200m) and heirloom varietals grown there." },
-  { tag:"Brewing Chemistry", title:"Water Hardness Changes Everything", body:"Ideal brew water has 150 ppm TDS and a pH of 7. Water that's too soft under-extracts and tastes sour; too hard and it over-extracts, turning bitter. A cheap TDS meter is one of the best investments behind the bar." },
-  { tag:"Equipment & Tools", title:"Calibrate Your Grinder Weekly", body:"Burr grinders drift over time as burrs wear. Run a test shot every week and record your grind setting, dose, yield, and time. A log of just 30 seconds per day catches drift before it silently ruins your espresso." },
-  { tag:"Sensory Training", title:"Train Your Nose First", body:"Smell is responsible for roughly 80% of flavour perception. Before tasting a coffee, inhale deeply from the dry grounds, then from the bloom, then from the cup. You'll detect floral, fruity, nutty, and roasty notes your tongue alone would miss." },
-  { tag:"Latte Art", title:"Merge Point is Everything", body:"Begin pouring latte art with the pitcher high (8–10cm) to sink the foam, then lower the pitcher to the surface once the cup is half full. The merge point — where you drop the pitcher — determines whether your rosette stays crisp or collapses." },
-  { tag:"Water Quality", title:"Filter Your Ice Too", body:"Most baristas filter brew water but forget the ice machine. Unfiltered ice dilutes cold drinks with chlorine and mineral off-flavours as it melts. Run your ice supply through the same filtration as your espresso water." },
-  { tag:"Bean Roasting", title:"First Crack Signals Development", body:"During roasting, beans undergo first crack at around 196°C. Light roasts finish just after first crack; medium roasts develop 1–2 minutes beyond it. Pulling too early leaves grassy, underdeveloped flavour." },
-  { tag:"Café Operations", title:"FIFO Keeps Beans Fresh", body:"Always rotate stock First In, First Out. Espresso beans are best 7–21 days after roast. Mark bags with the roast date on arrival and place newer stock behind older. Stale beans are the most common cause of flat espresso." },
-  { tag:"Espresso Technique", title:"Distribute Before You Tamp", body:"Uneven distribution creates channels where water finds the path of least resistance. Use a distribution tool or the Stockfleth finger-spin before tamping at 15–20kg of pressure." },
-  { tag:"Milk Science", title:"Whole Milk vs. Alternatives", body:"Whole milk (3.5% fat, 3.3% protein) produces the richest microfoam. Oat milk needs higher steam pressure; almond milk splits easily — steam it below 55°C and pour immediately." },
-  { tag:"Coffee Origins", title:"Colombian Huila Flavour Profile", body:"Huila coffees have bright malic acidity (green apple), caramel sweetness, and a clean finish. Grown at 1,500–2,000m with bimodal rainfall, they benefit from a medium-light roast." },
-  { tag:"Brewing Chemistry", title:"The Golden Ratio for Pour-Over", body:"The specialty standard is 1:15 to 1:17 coffee-to-water by weight. Start at 1:16 — 20g coffee to 320ml water. Adjust toward 1:15 if weak or 1:17 if bitter." },
-  { tag:"Equipment & Tools", title:"Backflush Groupheads Daily", body:"Backflushing removes coffee oils from the shower screen and solenoid valve. Do a water-only backflush daily and a detergent backflush (0.5g Cafiza) weekly." },
-  { tag:"Sensory Training", title:"Use a Flavour Wheel Actively", body:"When tasting, start at the centre of the SCA Wheel (e.g. 'fruity') and work outward to specific descriptors ('dried fruit → raisin'). Doing this for 5 minutes daily builds vocabulary fast." },
-  { tag:"Latte Art", title:"Temperature Affects Pour Control", body:"Milk poured above 68°C becomes too thin. Below 55°C the foam is too stiff. The sweet spot is 60–65°C — thick enough to hold a pattern but fluid enough to move with a gentle wrist motion." },
-  { tag:"Water Quality", title:"Descale Every 200 Brew Cycles", body:"Limescale insulates heating elements, forcing them to work harder. A hard-water machine needs descaling every 4–6 weeks. Use citric acid solution (1 tbsp per litre) — never vinegar." },
-  { tag:"Bean Roasting", title:"Rest Your Beans After Roasting", body:"Freshly roasted coffee releases CO₂ for several days. Espresso needs 7–10 days rest; filter needs 3–5. Brewing too early produces bubbly, sour shots because CO₂ interferes with water contact." },
-  { tag:"Café Operations", title:"Dial In Every Morning", body:"Pull a test shot every morning and adjust until your yield hits 1:2 ratio (18g in, 36g out) in 28–30 seconds. Log it. Consistency starts with this daily ritual." },
-  { tag:"Espresso Technique", title:"Yield Ratio Defines Strength", body:"A 1:2 ratio (18g in, 36g out) is standard espresso. Ristretto runs 1:1.5 for a concentrated, sweeter shot; lungo runs 1:3 for a lighter, more floral cup." },
-  { tag:"Milk Science", title:"Purge the Steam Wand Always", body:"Before and after steaming, purge the wand with a 1-second burst. This clears condensed water that dilutes the drink and destabilises foam. Wipe immediately after each use." },
-  { tag:"Coffee Origins", title:"Kenya AA and Bright Acidity", body:"Kenyan AA coffees (largest bean size) from Kiambu and Nyeri have distinctive blackcurrant and tomato acidity from phosphoric acid compounds in their volcanic red soil." },
-  { tag:"Brewing Chemistry", title:"Bloom Unlocks Filter Coffee Flavour", body:"Wetting grounds with 2–3× their weight in hot water for 30–45 seconds lets CO₂ escape before the main pour. Skipping the bloom creates uneven extraction and a hollow cup." },
-  { tag:"Equipment & Tools", title:"Check Portafilter Basket Wear", body:"Espresso baskets develop enlarged micro-holes with use, causing channeling. Hold a used basket up to light — if holes look uneven or large, replace it. They cost under £10." },
-  { tag:"Sensory Training", title:"Slurp Loudly When Cupping", body:"Professional cuppers slurp forcefully to aerate coffee across the entire palate. The turbulence spreads volatile aromatic compounds evenly, revealing more of the cup's complexity." },
-  { tag:"Latte Art", title:"Practice the Heart Shape First", body:"The heart is the foundation of all latte art. Pour to 60% full with pitcher high, lower to the surface, wiggle to create a white dot, then cut through it by flicking the pitcher upward." },
-  { tag:"Water Quality", title:"Brew Temperature Precision Matters", body:"Brew between 92–96°C. Lighter roasts extract better at 94–96°C; darker roasts at 90–93°C. A 2°C shift noticeably changes extraction — a PID controller pays for itself." },
-  { tag:"Bean Roasting", title:"Maillard Reaction Creates Flavour", body:"The Maillard reaction begins at ~150°C, combining amino acids and sugars into hundreds of flavour compounds — responsible for caramel, chocolate, and nutty notes." },
-  { tag:"Café Operations", title:"Weigh Every Shot During Rush", body:"Baristas drift during busy service. Spot-check every 10th shot during peak hours. A 2g yield drift compounds into dozens of inconsistent drinks per shift without you noticing." },
-  { tag:"Espresso Technique", title:"Puck Prep Reduces Channeling", body:"Three habits prevent channeling: level distribution, firm tamping (15–20kg), and a clean dry basket before dosing. Add a puck screen for further insurance." },
+  { tag:"Espresso Technique", title:"Nail Your Extraction Time", body:"A well-pulled espresso should take 25–30 seconds from first drop to finish. If it runs faster, grind finer or tamp harder. If it stalls past 35 seconds, coarsen the grind slightly." },
+  { tag:"Milk Science", title:"Steam at the Right Angle", body:"Position your steam wand just off-centre and tilt the pitcher at 15–20°. Stop steaming when the pitcher reaches 60–65°C — any hotter and the milk proteins denature and taste flat." },
+  { tag:"Coffee Origins", title:"Ethiopia: Birthplace of Coffee", body:"Coffee was first discovered in the Kaffa region of Ethiopia around 850 AD. Ethiopian naturals from Yirgacheffe carry intense blueberry and jasmine notes due to high altitude." },
+  { tag:"Brewing Chemistry", title:"Water Hardness Changes Everything", body:"Ideal brew water has 150 ppm TDS and a pH of 7. Too soft and it under-extracts; too hard and it over-extracts. A cheap TDS meter is one of the best investments behind the bar." },
+  { tag:"Equipment & Tools", title:"Calibrate Your Grinder Weekly", body:"Burr grinders drift over time. Run a test shot every week and record your grind setting, dose, yield, and time. A log of 30 seconds per day catches drift before it ruins your espresso." },
+  { tag:"Sensory Training", title:"Train Your Nose First", body:"Smell is responsible for roughly 80% of flavour perception. Inhale deeply from the dry grounds, then from the bloom, then from the cup to detect floral, fruity, and roasty notes." },
+  { tag:"Latte Art", title:"Merge Point is Everything", body:"Begin pouring with the pitcher high to sink the foam, then lower it once the cup is half full. The merge point determines whether your rosette stays crisp or collapses." },
+  { tag:"Water Quality", title:"Filter Your Ice Too", body:"Most baristas filter brew water but forget the ice machine. Unfiltered ice dilutes cold drinks with chlorine and off-flavours as it melts." },
+  { tag:"Bean Roasting", title:"First Crack Signals Development", body:"Beans undergo first crack at around 196°C. Light roasts finish just after first crack; medium roasts develop 1–2 minutes beyond it. Pulling too early leaves grassy flavour." },
+  { tag:"Café Operations", title:"FIFO Keeps Beans Fresh", body:"Always rotate stock First In, First Out. Espresso beans are best 7–21 days after roast. Mark bags with the roast date and place newer stock behind older." },
+  { tag:"Espresso Technique", title:"Distribute Before You Tamp", body:"Uneven distribution creates channels where water finds the path of least resistance. Use a distribution tool or finger-spin before tamping at 15–20kg of pressure." },
+  { tag:"Milk Science", title:"Whole Milk vs. Alternatives", body:"Whole milk produces the richest microfoam. Oat milk needs higher steam pressure; almond milk splits easily — steam it below 55°C and pour immediately." },
+  { tag:"Coffee Origins", title:"Colombian Huila Flavour Profile", body:"Huila coffees have bright malic acidity, caramel sweetness, and a clean finish. Grown at 1,500–2,000m, they benefit from a medium-light roast to preserve complexity." },
+  { tag:"Brewing Chemistry", title:"The Golden Ratio for Pour-Over", body:"Start at 1:16 — 20g coffee to 320ml water. Adjust toward 1:15 if it tastes weak or 1:17 if it tastes bitter. A scale is non-negotiable for consistency." },
+  { tag:"Equipment & Tools", title:"Backflush Groupheads Daily", body:"Backflushing removes coffee oils from the shower screen. Do a water-only backflush daily and a detergent backflush weekly. Neglected groupheads add rancid aftertaste." },
+  { tag:"Sensory Training", title:"Use a Flavour Wheel Actively", body:"Start at the centre of the SCA Wheel and work outward to specific descriptors. Doing this for 5 minutes daily builds vocabulary fast." },
+  { tag:"Latte Art", title:"Temperature Affects Pour Control", body:"Milk above 68°C becomes too thin. Below 55°C the foam is too stiff. The sweet spot is 60–65°C — thick enough to hold a pattern but fluid enough to move." },
+  { tag:"Water Quality", title:"Descale Every 200 Brew Cycles", body:"Limescale insulates heating elements. A hard-water machine needs descaling every 4–6 weeks. Use citric acid solution — never vinegar, which leaves residue." },
+  { tag:"Bean Roasting", title:"Rest Your Beans After Roasting", body:"Espresso needs 7–10 days rest after roasting; filter needs 3–5. Brewing too early produces bubbly, sour shots because CO₂ interferes with water contact." },
+  { tag:"Café Operations", title:"Dial In Every Morning", body:"Pull a test shot every morning and adjust until your yield hits 1:2 ratio in 28–30 seconds. Log it. Consistency starts with this daily ritual." },
+  { tag:"Espresso Technique", title:"Yield Ratio Defines Strength", body:"A 1:2 ratio (18g in, 36g out) is standard espresso. Ristretto runs 1:1.5 for concentrated sweetness; lungo runs 1:3 for a lighter, more floral cup." },
+  { tag:"Milk Science", title:"Purge the Steam Wand Always", body:"Before and after steaming, purge the wand with a 1-second burst. This clears condensed water that dilutes the drink and destabilises foam structure." },
+  { tag:"Coffee Origins", title:"Kenya AA and Bright Acidity", body:"Kenyan AA coffees from Kiambu and Nyeri have distinctive blackcurrant and tomato acidity from phosphoric acid compounds in their volcanic red soil." },
+  { tag:"Brewing Chemistry", title:"Bloom Unlocks Filter Coffee Flavour", body:"Wetting grounds with 2–3× their weight in hot water for 30–45 seconds lets CO₂ escape. Skipping the bloom creates uneven extraction and a hollow cup." },
+  { tag:"Equipment & Tools", title:"Check Portafilter Basket Wear", body:"Espresso baskets develop enlarged micro-holes with use. Hold a used basket up to light — if holes look uneven or large, replace it. They cost under £10." },
+  { tag:"Sensory Training", title:"Slurp Loudly When Cupping", body:"Professional cuppers slurp forcefully to aerate coffee across the entire palate. The turbulence spreads volatile aromatic compounds evenly." },
+  { tag:"Latte Art", title:"Practice the Heart Shape First", body:"Pour to 60% full with pitcher high, lower to the surface, wiggle to create a white dot, then cut through it by flicking the pitcher upward." },
+  { tag:"Water Quality", title:"Brew Temperature Precision Matters", body:"Brew between 92–96°C. Lighter roasts extract better at 94–96°C; darker roasts at 90–93°C. A 2°C shift noticeably changes extraction." },
+  { tag:"Bean Roasting", title:"Maillard Reaction Creates Flavour", body:"The Maillard reaction begins at ~150°C, combining amino acids and sugars into hundreds of flavour compounds — caramel, chocolate, and nutty notes." },
+  { tag:"Café Operations", title:"Weigh Every Shot During Rush", body:"Spot-check every 10th shot during peak hours. A 2g yield drift compounds into dozens of inconsistent drinks per shift without you noticing." },
+  { tag:"Espresso Technique", title:"Puck Prep Reduces Channeling", body:"Three habits prevent channeling: level distribution, firm tamping, and a clean dry basket before dosing. Add a puck screen for further insurance." },
   { tag:"Milk Science", title:"Lactose Sweetness Peaks at 60°C", body:"Lactose becomes noticeably sweeter as it heats toward 60°C. Milk steamed past 70°C loses this sweetness and tastes flat or slightly cooked." },
-  { tag:"Coffee Origins", title:"Sumatra Mandheling's Earthy Depth", body:"Indonesian Wet-Hulled (Giling Basah) processing produces lower acidity and earthy, cedar, dark chocolate notes. Sumatra Mandheling is the benchmark: full-bodied with a syrupy mouthfeel." },
-  { tag:"Brewing Chemistry", title:"Grind Size Controls Extraction Rate", body:"Finer grinds increase surface area, speeding extraction. In espresso, a 1-notch grind change can shift time by 5+ seconds. Change one variable at a time and wait two shots before judging." },
-  { tag:"Equipment & Tools", title:"Clean Group Gaskets Monthly", body:"Old hardened gaskets cause pressure leaks and uneven water flow. Replace every 6–12 months. Signs of wear: resistance locking the portafilter, or drips from the group during extraction." },
-  { tag:"Sensory Training", title:"Cleanse Your Palate Between Tastes", body:"Sparkling water clears the palate better than still — carbonic acid removes aromatic residue. Plain crackers help reset between very different coffees." },
-  { tag:"Latte Art", title:"Milk Jug Size Matches Cup Size", body:"Use a 350ml jug for small cups (150–200ml) and a 600ml jug for large cups (300–400ml+). Overfilling prevents proper whirlpool formation; underfilling makes temperature control difficult." },
-  { tag:"Water Quality", title:"Soft Water Needs Mineral Additions", body:"RO water (near 0 ppm TDS) extracts poorly and corrodes boilers. Add a remineralisation filter to reach 50–150 ppm TDS. Magnesium enhances sweetness; calcium adds body." },
-  { tag:"Bean Roasting", title:"Colour Meters Remove Subjectivity", body:"Roast colour measured by Agtron spectrophotometer ranges 25 (dark) to 95 (light). Specialty roasters target 65–80 for light-to-medium. Colour meters allow exact roast replication." },
-  { tag:"Café Operations", title:"Group Temperature Recovery Time", body:"After pulling a shot, the group head needs 20–30 seconds to return to brew temperature. Back-to-back shots without this pause cause temperature drift, making each successive shot more bitter." },
-  { tag:"Espresso Technique", title:"Pre-Infusion Improves Evenness", body:"Pre-infusion wets the puck at 2–4 bar for 3–8 seconds before full pressure. This softens dry clumps and reduces channeling risk. Many modern machines have this built in." },
-  { tag:"Milk Science", title:"Oat Milk Barista Blends Explained", body:"Barista oat milk contains emulsifiers (rapeseed oil or sunflower lecithin) that stabilise foam under steam heat. Standard supermarket oat milk lacks these and produces grainy, unstable foam." },
+  { tag:"Coffee Origins", title:"Sumatra Mandheling's Earthy Depth", body:"Indonesian Wet-Hulled processing produces lower acidity and earthy, cedar, dark chocolate notes. Sumatra Mandheling is the benchmark for full-bodied coffee." },
+  { tag:"Brewing Chemistry", title:"Grind Size Controls Extraction Rate", body:"In espresso, a 1-notch grind change can shift extraction time by 5+ seconds. Always change one variable at a time and wait two shots before judging." },
+  { tag:"Equipment & Tools", title:"Clean Group Gaskets Monthly", body:"Old hardened gaskets cause pressure leaks. Replace every 6–12 months. Signs of wear: resistance locking the portafilter, or drips from the group during extraction." },
+  { tag:"Sensory Training", title:"Cleanse Your Palate Between Tastes", body:"Sparkling water clears the palate better than still water. Plain crackers help reset between very different coffees." },
+  { tag:"Latte Art", title:"Milk Jug Size Matches Cup Size", body:"Use a 350ml jug for small cups and a 600ml jug for large cups. Overfilling prevents proper whirlpool formation; underfilling makes temperature control difficult." },
+  { tag:"Water Quality", title:"Soft Water Needs Mineral Additions", body:"RO water extracts poorly and corrodes boilers. Add a remineralisation filter to reach 50–150 ppm TDS. Magnesium enhances sweetness; calcium adds body." },
+  { tag:"Bean Roasting", title:"Colour Meters Remove Subjectivity", body:"Specialty roasters target 65–80 on the Agtron scale for light-to-medium roasts. Colour meters eliminate guesswork and allow exact roast replication." },
+  { tag:"Café Operations", title:"Group Temperature Recovery Time", body:"After pulling a shot, the group head needs 20–30 seconds to return to brew temperature. Back-to-back shots without this pause cause temperature drift." },
+  { tag:"Espresso Technique", title:"Pre-Infusion Improves Evenness", body:"Pre-infusion wets the puck at 2–4 bar for 3–8 seconds before full pressure. This softens dry clumps and reduces channeling risk." },
+  { tag:"Milk Science", title:"Oat Milk Barista Blends Explained", body:"Barista oat milk contains emulsifiers that stabilise foam under steam heat. Standard supermarket oat milk lacks these and produces grainy, unstable foam." },
 ];
 
 function getDailyTip() {
@@ -111,9 +111,6 @@ const DEFAULT_RECIPES = [
     method:"Sift matcha into bowl. Whisk with hot water until frothy. Steam oat milk to 60°C. Pour over ice then top with milk.", garnish:"Matcha dusting" },
 ];
 const BLANK_FORM = { name:"", category:"Mocktails", ingredients:["","","","",""], method:"", garnish:"", image:"" };
-
-// ── Components ────────────────────────────────────────────────────
-
 function Toast({ message, visible }) {
   return (
     <div style={{ position:"fixed",bottom:"24px",left:"50%",transform:`translateX(-50%) translateY(${visible?0:"12px"})`,background:"#333",color:"#fff",padding:"10px 20px",borderRadius:"8px",fontSize:"13px",opacity:visible?1:0,transition:"all 0.2s ease",pointerEvents:"none",zIndex:200,whiteSpace:"nowrap",boxShadow:"0 4px 20px rgba(0,0,0,0.4)" }}>{message}</div>
@@ -164,7 +161,7 @@ function AdminModal({ mode, onClose, onLogin, onSetPassword, onChangePassword, o
   const [pw,setPw]=useState(""); const [newPw,setNewPw]=useState(""); const [confirm,setConfirm]=useState(""); const [error,setError]=useState("");
   const inp={width:"100%",background:t.surface2,border:`1px solid ${t.border}`,borderRadius:"8px",padding:"11px 13px",color:t.textPrimary,fontSize:"14px",fontFamily:"inherit",outline:"none",boxSizing:"border-box"};
   const lbl={fontSize:"11px",fontWeight:"600",letterSpacing:"1px",textTransform:"uppercase",color:t.textLabel,display:"block",marginBottom:"7px"};
-  const btn=(bg,col)=>({background:bg,border:"none",borderRadius:"8px",padding:"13px",color:col,fontSize:"14px",fontWeight:"700",cursor:"pointer",fontFamily:"inherit",width:"100%",transition:"opacity 0.15s"});
+  const btn=(bg,col)=>({background:bg,border:"none",borderRadius:"8px",padding:"13px",color:col,fontSize:"14px",fontWeight:"700",cursor:"pointer",fontFamily:"inherit",width:"100%"});
   const handleSetup=()=>{ if(newPw.length<4){setError("Min 4 characters.");return;} if(newPw!==confirm){setError("Passwords don't match.");return;} onSetPassword(newPw); };
   const handleLogin=()=>{ if(!onLogin(pw)){setError("Incorrect password.");setPw("");} };
   const handleChange=()=>{ if(newPw.length<4){setError("Min 4 characters.");return;} if(newPw!==confirm){setError("Passwords don't match.");return;} if(!onLogin(pw,true)){setError("Current password incorrect.");return;} onChangePassword(newPw); };
@@ -173,7 +170,7 @@ function AdminModal({ mode, onClose, onLogin, onSetPassword, onChangePassword, o
       <div onClick={e=>e.stopPropagation()} style={{background:t.surface,borderRadius:"16px",width:"100%",maxWidth:"360px",padding:"28px 24px",border:`1px solid ${t.border}`}}>
         {mode==="setup"&&<>
           <div style={{fontSize:"18px",fontWeight:"700",color:t.textPrimary,marginBottom:"6px"}}>Set Admin Password</div>
-          <p style={{fontSize:"13px",color:t.textMuted,marginBottom:"20px",lineHeight:1.5}}>No password set yet. Create one to restrict editing to admins only.</p>
+          <p style={{fontSize:"13px",color:t.textMuted,marginBottom:"20px",lineHeight:1.5}}>Create a password to restrict editing to admins only.</p>
           <div style={{display:"flex",flexDirection:"column",gap:"14px"}}>
             <div><label style={lbl}>New Password</label><input style={inp} type="password" value={newPw} onChange={e=>{setNewPw(e.target.value);setError("");}} placeholder="Min. 4 characters"/></div>
             <div><label style={lbl}>Confirm Password</label><input style={inp} type="password" value={confirm} onChange={e=>{setConfirm(e.target.value);setError("");}} placeholder="Repeat password"/></div>
@@ -184,7 +181,7 @@ function AdminModal({ mode, onClose, onLogin, onSetPassword, onChangePassword, o
         </>}
         {mode==="login"&&<>
           <div style={{fontSize:"18px",fontWeight:"700",color:t.textPrimary,marginBottom:"6px"}}>Admin Login</div>
-          <p style={{fontSize:"13px",color:t.textMuted,marginBottom:"20px",lineHeight:1.5}}>Enter the admin password to add, edit, or delete recipes.</p>
+          <p style={{fontSize:"13px",color:t.textMuted,marginBottom:"20px",lineHeight:1.5}}>Enter the admin password to edit recipes.</p>
           <div style={{display:"flex",flexDirection:"column",gap:"14px"}}>
             <div><label style={lbl}>Password</label><input style={inp} type="password" value={pw} autoFocus onChange={e=>{setPw(e.target.value);setError("");}} onKeyDown={e=>e.key==="Enter"&&handleLogin()} placeholder="Enter admin password"/></div>
             {error&&<p style={{color:t.danger,fontSize:"12px",margin:0}}>{error}</p>}
@@ -245,12 +242,12 @@ function RecipeModal({ initial, onSave, onClose, t }) {
           <div><label style={lbl}>Garnish <span style={{opacity:0.5,fontWeight:400,fontSize:"11px",textTransform:"none",letterSpacing:0}}>(optional)</span></label><input style={inp} value={form.garnish} onChange={e=>sf("garnish",e.target.value)} placeholder="e.g. Matcha dusting"/></div>
           <div>
             <label style={lbl}>Drink Photo <span style={{opacity:0.5,fontWeight:400,fontSize:"11px",textTransform:"none",letterSpacing:0}}>(optional)</span></label>
-            {form.image ? (
+            {form.image?(
               <div style={{position:"relative",display:"inline-block",width:"100%"}}>
                 <img src={form.image} alt="preview" style={{width:"100%",maxHeight:"180px",objectFit:"cover",borderRadius:"10px",border:`1px solid ${t.border}`,display:"block"}}/>
                 <button onClick={()=>sf("image","")} style={{position:"absolute",top:"8px",right:"8px",background:"rgba(0,0,0,0.6)",border:"none",borderRadius:"50%",width:"28px",height:"28px",color:"#fff",fontSize:"14px",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center"}}>✕</button>
               </div>
-            ) : (
+            ):(
               <label style={{display:"block",cursor:"pointer"}}>
                 <div style={{background:t.surface2,border:`1.5px dashed ${t.border}`,borderRadius:"10px",padding:"20px",textAlign:"center",color:t.textMuted,fontSize:"13px"}}>📷 Tap to upload photo</div>
                 <input type="file" accept="image/*" style={{display:"none"}} onChange={e=>{
@@ -262,14 +259,12 @@ function RecipeModal({ initial, onSave, onClose, t }) {
               </label>
             )}
           </div>
-          <button disabled={!valid} onClick={()=>valid&&onSave(form)} style={{background:valid?t.accent:t.surface2,border:"none",borderRadius:"10px",padding:"15px",color:valid?t.accentText:t.textFaint,fontSize:"14px",fontWeight:"700",cursor:valid?"pointer":"not-allowed",fontFamily:"inherit",transition:"background 0.15s"}}>{initial?"Save Changes":"Add Recipe"}</button>
+          <button disabled={!valid} onClick={()=>valid&&onSave(form)} style={{background:valid?t.accent:t.surface2,border:"none",borderRadius:"10px",padding:"15px",color:valid?t.accentText:t.textFaint,fontSize:"14px",fontWeight:"700",cursor:valid?"pointer":"not-allowed",fontFamily:"inherit"}}>{initial?"Save Changes":"Add Recipe"}</button>
         </div>
       </div>
     </div>
   );
 }
-
-// ── Main App ──────────────────────────────────────────────────────
 export default function MARAApp() {
   const [isDark,setIsDark]=useState(true);
   const t=THEMES[isDark?"dark":"light"];
@@ -298,7 +293,6 @@ export default function MARAApp() {
       setAdminPwHash(pw);
       setSyncing(false);
     })();
-    // Real-time listener
     const unsub=dbSubscribe((list)=>{
       const s=JSON.stringify(list);
       if(s!==lastRef.current){lastRef.current=s;setRecipes(list);showToast("↻ Menu updated");}
@@ -322,7 +316,6 @@ export default function MARAApp() {
 
   return (
     <div style={{minHeight:"100vh",background:t.bg,fontFamily:"-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif",paddingBottom:"90px",color:t.textPrimary,transition:"background 0.2s,color 0.2s"}}>
-      {/* Header */}
       <div style={{position:"sticky",top:0,background:t.bg,zIndex:20,borderBottom:`1px solid ${t.border}`,transition:"background 0.2s,border-color 0.2s"}}>
         <div style={{padding:"16px 20px 0"}}>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"14px"}}>
@@ -335,18 +328,18 @@ export default function MARAApp() {
             </div>
             <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
               <div style={{width:"7px",height:"7px",borderRadius:"50%",background:syncing?"#444":"#5DBF7A",boxShadow:syncing?"none":"0 0 6px #5DBF7A",transition:"background 0.3s",marginRight:"6px"}}/>
-              <button onClick={handleLockClick} style={{background:isAdmin?t.accent+"22":"none",border:isAdmin?`1px solid ${t.accent}44`:"none",borderRadius:"8px",padding:"5px 8px",cursor:"pointer",fontSize:"16px",lineHeight:1,color:isAdmin?t.accent:t.textFaint,display:"flex",alignItems:"center",gap:"5px",transition:"all 0.2s"}}>
-                {isAdmin?"🔓":"🔒"}{isAdmin&&<span style={{fontSize:"11px",fontWeight:"600",letterSpacing:"0.5px"}}>Admin</span>}
+              <button onClick={handleLockClick} style={{background:isAdmin?t.accent+"22":"none",border:isAdmin?`1px solid ${t.accent}44`:"none",borderRadius:"8px",padding:"5px 8px",cursor:"pointer",fontSize:"16px",lineHeight:1,color:isAdmin?t.accent:t.textFaint,display:"flex",alignItems:"center",gap:"5px"}}>
+                {isAdmin?"🔓":"🔒"}{isAdmin&&<span style={{fontSize:"11px",fontWeight:"600"}}>Admin</span>}
               </button>
               <ThemeToggle isDark={isDark} onToggle={()=>setIsDark(d=>!d)}/>
             </div>
           </div>
           <div style={{position:"relative",marginBottom:"12px"}}>
             <span style={{position:"absolute",left:"13px",top:"50%",transform:"translateY(-50%)",color:t.textFaint,fontSize:"14px",pointerEvents:"none"}}>⌕</span>
-            <input type="text" placeholder="Search drinks or ingredients…" value={searchQuery} onChange={e=>setSearchQuery(e.target.value)} style={{width:"100%",background:t.inputBg,border:`1px solid ${t.border}`,borderRadius:"10px",padding:"11px 14px 11px 36px",color:t.textPrimary,fontSize:"14px",fontFamily:"inherit",outline:"none",boxSizing:"border-box",transition:"background 0.2s,color 0.2s"}}/>
+            <input type="text" placeholder="Search drinks or ingredients…" value={searchQuery} onChange={e=>setSearchQuery(e.target.value)} style={{width:"100%",background:t.inputBg,border:`1px solid ${t.border}`,borderRadius:"10px",padding:"11px 14px 11px 36px",color:t.textPrimary,fontSize:"14px",fontFamily:"inherit",outline:"none",boxSizing:"border-box"}}/>
           </div>
           <div style={{display:"flex",gap:"6px",overflowX:"auto",paddingBottom:"14px"}}>
-            {categories.map(cat=>{const active=activeCategory===cat;const col=CATEGORY_COLORS[cat];return <button key={cat} onClick={()=>setActiveCategory(cat)} style={{padding:"6px 14px",borderRadius:"20px",whiteSpace:"nowrap",cursor:"pointer",fontFamily:"inherit",fontSize:"12px",fontWeight:active?"700":"400",letterSpacing:"0.3px",transition:"all 0.15s",border:"none",background:active?(col||t.accent):t.surface2,color:active?"#fff":t.pillText}}>{cat}</button>;})}
+            {categories.map(cat=>{const active=activeCategory===cat;const col=CATEGORY_COLORS[cat];return <button key={cat} onClick={()=>setActiveCategory(cat)} style={{padding:"6px 14px",borderRadius:"20px",whiteSpace:"nowrap",cursor:"pointer",fontFamily:"inherit",fontSize:"12px",fontWeight:active?"700":"400",border:"none",background:active?(col||t.accent):t.surface2,color:active?"#fff":t.pillText}}>{cat}</button>;})}
           </div>
         </div>
       </div>
@@ -354,7 +347,7 @@ export default function MARAApp() {
       <div style={{padding:"14px 0 6px"}}><DailyCard t={t}/></div>
 
       {adminPwHash&&!isAdmin&&(
-        <div style={{margin:"4px 16px 2px",padding:"8px 12px",background:t.surface2,borderRadius:"8px",border:`1px solid ${t.border}`,display:"flex",alignItems:"center"}}>
+        <div style={{margin:"4px 16px 2px",padding:"8px 12px",background:t.surface2,borderRadius:"8px",border:`1px solid ${t.border}`}}>
           <span style={{fontSize:"12px",color:t.textMuted}}>🔒 View only — <button onClick={handleLockClick} style={{background:"none",border:"none",color:t.accent,fontSize:"12px",cursor:"pointer",padding:0,fontFamily:"inherit"}}>admin login to edit</button></span>
         </div>
       )}
@@ -382,10 +375,10 @@ export default function MARAApp() {
                 )}
                 <div style={{flex:1,minWidth:0}}>
                   <div style={{fontSize:"16px",fontWeight:"700",color:t.textPrimary,lineHeight:1.25,marginBottom:"3px"}}>{recipe.name}</div>
-                  <div style={{fontSize:"11px",color:t.textMuted,letterSpacing:"0.5px"}}>{recipe.category}</div>
+                  <div style={{fontSize:"11px",color:t.textMuted}}>{recipe.category}</div>
                 </div>
                 <div style={{display:"flex",alignItems:"center",gap:"2px",flexShrink:0}}>
-                  {isAdmin&&<><button onClick={e=>{e.stopPropagation();setEditingRecipe(recipe);}} style={{background:"none",border:"none",color:t.textFaint,fontSize:"15px",cursor:"pointer",padding:"6px",borderRadius:"6px",lineHeight:1}}>✎</button><button onClick={e=>{e.stopPropagation();handleDelete(recipe.id);}} style={{background:"none",border:"none",color:t.textFaint,fontSize:"15px",cursor:"pointer",padding:"6px",borderRadius:"6px",lineHeight:1}}>⌫</button></>}
+                  {isAdmin&&<><button onClick={e=>{e.stopPropagation();setEditingRecipe(recipe);}} style={{background:"none",border:"none",color:t.textFaint,fontSize:"15px",cursor:"pointer",padding:"6px",lineHeight:1}}>✎</button><button onClick={e=>{e.stopPropagation();handleDelete(recipe.id);}} style={{background:"none",border:"none",color:t.textFaint,fontSize:"15px",cursor:"pointer",padding:"6px",lineHeight:1}}>⌫</button></>}
                   <span style={{color:t.textFaint,fontSize:"16px",transform:isOpen?"rotate(90deg)":"rotate(0deg)",transition:"transform 0.2s",display:"inline-block",marginLeft:"4px"}}>›</span>
                 </div>
               </div>
@@ -410,7 +403,7 @@ export default function MARAApp() {
         )}
       </div>
 
-      {isAdmin&&<button onClick={()=>setShowModal(true)} style={{position:"fixed",bottom:"28px",right:"20px",background:t.accent,border:"none",borderRadius:"50%",width:"54px",height:"54px",fontSize:"26px",color:t.accentText,cursor:"pointer",boxShadow:"0 4px 24px rgba(0,0,0,0.4)",display:"flex",alignItems:"center",justifyContent:"center",transition:"transform 0.15s,background 0.2s",zIndex:30}} onMouseEnter={e=>e.currentTarget.style.transform="scale(1.08)"} onMouseLeave={e=>e.currentTarget.style.transform="scale(1)"}>+</button>}
+      {isAdmin&&<button onClick={()=>setShowModal(true)} style={{position:"fixed",bottom:"28px",right:"20px",background:t.accent,border:"none",borderRadius:"50%",width:"54px",height:"54px",fontSize:"26px",color:t.accentText,cursor:"pointer",boxShadow:"0 4px 24px rgba(0,0,0,0.4)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:30}} onMouseEnter={e=>e.currentTarget.style.transform="scale(1.08)"} onMouseLeave={e=>e.currentTarget.style.transform="scale(1)"}>+</button>}
 
       {showModal&&<RecipeModal onSave={handleAdd} onClose={()=>setShowModal(false)} t={t}/>}
       {editingRecipe&&<RecipeModal initial={editingRecipe} onSave={handleEdit} onClose={()=>setEditingRecipe(null)} t={t}/>}
