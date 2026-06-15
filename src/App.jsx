@@ -264,7 +264,8 @@ function RecipeModal({ initial, onSave, onClose, t }) {
       </div>
     </div>
   );
-}export default function MARAApp() {
+}
+export default function MARAApp() {
   const [isDark,setIsDark]=useState(true);
   const t=THEMES[isDark?"dark":"light"];
   const [recipes,setRecipes]=useState([]);
